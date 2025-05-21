@@ -1,0 +1,79 @@
+<!-- this tag tells the browser that this is an HTML5 webpage -->
+<!DOCTYPE html>
+<!-- html is a required tag on each html page; lang=en is optional -->
+<html lang="en">
+<!-- head section is where the info for the browsers and search engines go -->
+<head>
+    <!-- tells the browser about what characters may appear on the site; UTF-8 is basically everything -->
+    <meta charset="UTF-8">
+    <!-- leave this meta tag as is so that the site will display ok on mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- the title appears in the browser tab; keep it short, sweet and simple -->
+    <title>Week 1 Demo</title>
+
+    <!-- link to our main stylesheet -->
+    <link rel="stylesheet" href="./styles/main.css">
+</head>
+<!-- body is where all of the content - text, images, etc. goes -->
+<body>
+    <!-- header is generally where you would expect to see the logo, menu, page title, etc. -->
+    <header>
+        <!-- h1 is the page title; each page should have 1 and only 1 page title -->
+        <h1>Can You Escape?</h1>
+        <!-- sub heading, h2 here -->
+        <h2>Choose your escape room</h2>
+    </header>
+    <!-- core page content would probably be here -->
+    <main>
+        <!-- this section will show the available rooms -->
+        <section class="rooms">
+            <article class="room">
+                <!-- image tag - img - should have src - file name and alt - describe what the image represents; class is optional -->
+                <img src="./images/lab.jpg" alt="Zombie Lab" class="room-img">
+                <!-- level 3 subheading -->
+                <h3>Zombie Lab</h3>
+                <!-- paragraph section with info about this room -->
+                <p>Difficult: hard; find the cure before time runs out!</p>
+            </article>
+
+            <article class="room">
+                <!-- image tag - img - should have src - file name and alt - describe what the image represents; class is optional -->
+                <img src="./images/pyramid.jpg" alt="Pharoah's Tomb" class="room-img">
+                <!-- level 3 subheading -->
+                <h3>Pharoah's Tomb</h3>
+                <!-- paragraph section with info about this room -->
+                <p>Difficult: medium; crack the code to escape!</p>
+            </article>
+
+            <article class="room">
+                <!-- image tag - img - should have src - file name and alt - describe what the image represents; class is optional -->
+                <img src="./images/island.jpg" alt="Island Escape" class="room-img">
+                <!-- level 3 subheading -->
+                <h3>Island Escape</h3>
+                <!-- paragraph section with info about this room -->
+                <p>Difficult: easy; swim away before the guards return!</p>
+            </article>            
+        </section>
+
+        <section class="booking">
+            <h2>Book Your Escape</h2>
+            <form>
+                <input type="text" placeholder="Your Name" id="txtName" name="txtName" required>
+                <input type="email" placeholder="Your Email" id="txtEmail" name="txtEmail" required>
+                <input type="number" placeholder="# of Players" id="numPlayers" name="numPlayers" required>
+                <select required id="selRoom" name="selRoom">
+                    <option selected>Select Room</option>
+                    <option>Zombie Lab</option>
+                    <option>Pharoah's Tomb</option>
+                    <option>Island Escape</option>
+                </select>
+                <button type="submit">Request Booking</button>
+            </form>
+        </section>
+    </main>
+    <!-- stuff to show at the bottom of the page; maybe sitemap or legalese, etc. -->
+    <footer>
+        
+    </footer>
+</body>
+</html>
