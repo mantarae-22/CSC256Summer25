@@ -1,0 +1,28 @@
+body{
+    background-color: rgb(13, 94, 90);
+    color: whitesmoke;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.movieContainer{
+    border: 2px solid rgb(153, 153, 154);
+    padding: 10px;
+    margin: 0 auto;
+    max-width: 500px;
+}
+
+#divMovies{
+    padding: 10px;
+    border: 1px solid black;
+    height: 100px;
+    /* add a scrollbar if we end up with a lot of movies in the list */
+    overflow-y: auto;
+}
+
+button{
+    margin-bottom: 10px;
+    color: antiquewhite;
+    background-color:rgb(13, 94, 90);
+    border-radius: 5px;
+    padding: 5px;
+}

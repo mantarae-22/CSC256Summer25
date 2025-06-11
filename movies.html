@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Page</title>
+    <link rel="stylesheet" href="movielist.css">
+</head>
+<body>
+    <header>
+        <h1>Movie Page</h1>
+    </header>
+
+    <main>
+        <section class="movieContainer">
+            <h2>Add Movie</h2>
+            <label for="txtMovieName">Enter Movie Title: </label>
+            <input type="text" id="txtMovieName" name="txtMovieName" placeholder="Movie Title" required>
+            <button type="submit" onclick="addMovie();">Add Movie</button>
+
+            <div>
+                <button onclick="resetList();">Reset List</button>
+            </div>
+
+            <div id="divMovies"></div>
+        </section>
+    </main>
+
+    <!-- include the JavaScript file with the code to add and clear movies -->
+    <script src="movielist.js">       
+    </script>
+</body>
+</html>
