@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hero Information</title>
+    <script src="w6hero.js"></script>
+    <link rel="stylesheet" href="./styles/blue.css">
+</head>
+<body>
+    <header>
+        <h1>Hero Information</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Enter Hero Info</h2>
+            <form id="frmHero" name="frmHero">
+                <!-- Hero Name -->
+                <label for="txtName">Hero Name: </label>
+                <input type="text" id="txtName" name="txtName">
+                <!-- Hero Skills -->
+                <label for="txtSkills">Skills: </label>
+                <input type="text" id="txtSkills" name="txtSkills">
+                <!-- Health -->
+                <label for="numHealth">Health: </label>
+                <input type="number" id="numHealth" name="numHealth">
+                <!-- Points -->
+                <label for="numPoints">Points: </label>
+                <input type="number" id="numPoints" name="numPoints">
+
+                <button type="button" onclick="processForm();">Create Hero</button>
+            </form>
+
+            <h2 id="h2Hero" style="display: none;">Hero Information:</h2>
+            <div id="divOutput"></div>
+        </section>
+    </main>
+
+
+</body>
+</html>
